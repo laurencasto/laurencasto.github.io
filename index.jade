@@ -1,23 +1,40 @@
 doctype html
-html(lang="en")
+html(lang="en" class="page-home")
   head
-    title Lauren Casto Photography
+    title
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    link(rel="stylesheet", href="styles.css")
-    
+    link(rel="shortcut icon", href="/assets/img/favicons/favicon.ico")
+    link(rel="stylesheet", href="/assets/css/main.css")
+  
   body
-  
-    .container
-      
-      .inner-wrap
-
-        p Hello!
+    .ribbon
+    
+    .content-wrap
+      aside
+        .img-1.is-animating(style="background-image:url(assets/img/1.jpg)")
+        .img-2.in(style="background-image:url(assets/img/2.jpg)")
+        .img-3(style="background-image:url(assets/img/3.jpg)")
+        .img-4.in(style="background-image:url(assets/img/4.jpg)")
+        .img-5(style="background-image:url(assets/img/5.jpg)")
+        .img-6.in(style="background-image:url(assets/img/6.jpg)")
+        .img-7(style="background-image:url(assets/img/7.jpg)")
+        .img-8.in(style="background-image:url(assets/img/8.jpg)")
+          
+      article
         
-        p I'm taking a brief hiatus from professional photography work as I focus on bringing our next baby into the world.
-        
-        p I will be back as soon as I get this whole 'mother of two' thing down!
-  
-        p If you do need to contact me, please <span class="small-screen-only"><a href="mailto:laurencastophotography@gmail.com">email me</a></span><span class="large-screen-only">email me at <a href="mailto:laurencastophotography@gmail.com">laurencastophotography@gmail.com</a></span>. I will be checking my email and responding often throughout the next several months.
-  
-        p Best, <br> Lauren
+        .text-container
+          include assets/img/hellosign.svg
+          //h2 Hello, I'm Lauren
+          .sep
+          //p My love of photography is fueled by the emotion shown on the faces of my subjects. Whether it's surrounded by the people they love, in pensive solitude or the heightened intensity of childbirth, human emotion is what allows me to love what I do.
+          p I am a storyteller who captures real people doing real-life things. My services include portrait, high school senior, live birth, family, and engagement sessions.
+          p Your story is unique. Allow me to show you!
+          p.cta-container
+            a.cta(href="https://www.behance.net/laurencasto") See More Work
+            a.cta(href="mailto:laurencastophotography@gmail.com") Contact Me
+    
+    
+    
+    script(src="/assets/js/jquery-2.1.1.min.js")
+    script(src="/assets/js/functions.js", type="text/javascript")
